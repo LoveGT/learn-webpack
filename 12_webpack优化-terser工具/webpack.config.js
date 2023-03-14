@@ -1,6 +1,8 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "production",
   devtool: false,
@@ -19,6 +21,7 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [
+      // JS压缩插件TerserPlugin
       new TerserPlugin({
         extractComments: false,
         terserOptions: {
@@ -29,9 +32,9 @@ module.exports = {
           // toplevel: false,
           keep_fnames: true,
         },
-        // JS压缩插件TerserPlugin
-        // css压缩插件MiniCssExtractPlugin
       }),
+       // css压缩插件MiniCssExtractPlugin
+       new CSSMinimizerPlugin({})
     ],
   },
   module: {
@@ -59,4 +62,13 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[name]_chunk.css'
+    })
+  ]
 };

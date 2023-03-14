@@ -1,5 +1,7 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 var __webpack_exports__ = {};
+
 var message = " hello world";
 console.log(message);
 function foo() {
