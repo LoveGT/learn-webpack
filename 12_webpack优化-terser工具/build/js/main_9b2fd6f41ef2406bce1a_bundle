@@ -1,0 +1,20 @@
+/******/ (function() { // webpackBootstrap
+var __webpack_exports__ = {};
+var message = " hello world";
+console.log(message);
+function foo() {
+  console.log('foo function exec~');
+}
+foo();
+var obj = {
+  name: 'gaotao',
+  age: 18,
+  bar: function bar() {
+    return 'bar';
+  }
+};
+if (false) {}
+var name = obj.name,
+  age = obj.age;
+/******/ })()
+;
