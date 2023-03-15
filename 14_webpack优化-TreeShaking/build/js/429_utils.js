@@ -1,0 +1,4 @@
+"use strict";(self.webpackChunk_12_webpack_terser_=self.webpackChunk_12_webpack_terser_||[]).push([[429],{"./src/utils/math.js":
+/*!***************************!*\
+  !*** ./src/utils/math.js ***!
+  \***************************/function(__unused_webpack_module,__webpack_exports__,__webpack_require__){eval('__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "mul": function() { return /* binding */ mul; },\n/* harmony export */   "sum": function() { return /* binding */ sum; }\n/* harmony export */ });\nfunction sum(num1, num2) {\n  return num1 + num2;\n}\nfunction mul(num1, num2) {\n  return num1 * num2;\n}\n\n//# sourceURL=webpack://12_webpack%E4%BC%98%E5%8C%96-terser%E5%B7%A5%E5%85%B7/./src/utils/math.js?')}}]);

@@ -1,0 +1,32 @@
+"use strict";
+(self["webpackChunk_12_webpack_terser_"] = self["webpackChunk_12_webpack_terser_"] || []).push([[179],{
+
+/***/ 272:
+/***/ (function() {
+
+
+var message = " hello world";
+console.log(message);
+function foo() {
+  console.log('foo function exec~');
+}
+foo();
+var obj = {
+  name: 'gaotao',
+  age: 18,
+  bar: function bar() {
+    return 'bar';
+  }
+};
+if (false) {}
+var name = obj.name,
+  age = obj.age;
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+/******/ var __webpack_exports__ = (__webpack_exec__(272));
+/******/ }
+]);
