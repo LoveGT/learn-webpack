@@ -3,7 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
 module.exports = {
   mode: "development",
+  devtool: false,
   optimization: {
+    // 导入模块时, 分析模块中的哪些函数有被使用, 哪些函数没有被使用.
+    usedExports: true,
     chunkIds: 'deterministic',
     // runtime的代码是否抽取到单独的包中(早Vue2脚手架中)
     runtimeChunk: {
@@ -13,7 +16,6 @@ module.exports = {
      splitChunks: {
       chunks: "all",
       minSize: 10,
-
       // 自己对需要进行拆包的内容进行分包
       cacheGroups: {
         utils: {

@@ -1,0 +1,30 @@
+"use strict";
+(self["webpackChunk_12_webpack_terser_"] = self["webpackChunk_12_webpack_terser_"] || []).push([[179],{
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _utils_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/math */ "./src/utils/math.js");
+
+var message = 'hello tree shaking';
+var obj = {
+  name: 'why',
+  bar: function bar() {
+    return 'bar';
+  }
+};
+if (false) {}
+(0,_utils_math__WEBPACK_IMPORTED_MODULE_0__.sum)(20 + 30);
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+/******/ __webpack_require__.O(0, [429], function() { return __webpack_exec__("./src/main.js"); });
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
